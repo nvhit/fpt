@@ -1,9 +1,10 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 import Intro from '../../components/InputTest/Intro.js';
-import { createStore } from 'react-redux';
+import reducer from "../../reducers";
+import { createStore } from "redux";  
 
-const store = createStore(reducer); 
+const initialState = { a: "a " };
+const store = createStore(reducer, initialState); 
 const InputTest = () => (
   <div className="content">
     <div className="container-fluid">
@@ -23,5 +24,4 @@ const InputTest = () => (
     </div>
   </div>
 );
-
 export default InputTest;

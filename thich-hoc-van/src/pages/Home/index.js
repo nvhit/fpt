@@ -1,7 +1,4 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-
-
 const Home = () => (
   <div className="content">
     <div className="container-fluid">
@@ -24,5 +21,4 @@ const Home = () => (
     </div>
   </div>
 );
-
 export default Home;
