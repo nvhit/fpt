@@ -1,10 +1,11 @@
 import React from 'react';
-
-const ContentTest = () =>(
-    <div>
-        
-    </div>
+import FormElements from '../../components/FormInputs/renderField';
+const InputTest = () => (
+    <div className="col-md-12">
+        <FormElements />
+      
+      </div>
 );
+export default InputTest;
 
-export default ContentTest;
 

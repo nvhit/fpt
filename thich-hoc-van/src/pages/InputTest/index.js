@@ -1,10 +1,7 @@
 import React from 'react';
-import Intro from '../../components/InputTest/Intro.js';
-import reducer from "../../reducers";
-import { createStore } from "redux";  
+import Intro from '../../containers/InputTest';
+  
 
-const initialState = { a: "a " };
-const store = createStore(reducer, initialState); 
 const InputTest = () => (
   <div className="content">
     <div className="container-fluid">
@@ -13,7 +10,7 @@ const InputTest = () => (
         <div className="col-md-12">
           <div className="card">
             <div className="header">
-              <h4 className="title"></h4> 
+              <h4 className="title">Test</h4> 
             </div>
             <div className="content">
                 <Intro/>
@@ -24,4 +21,5 @@ const InputTest = () => (
     </div>
   </div>
 );
+
 export default InputTest;

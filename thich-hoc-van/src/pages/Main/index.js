@@ -1,7 +1,6 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import {  Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import cx from 'classnames';
 import { withRouter } from 'react-router-dom';
 
 import Header from './Header';
@@ -14,23 +13,11 @@ import SideBar from '../../components/SideBar';
 import Home from '../Home';
 import InputTest from '../InputTest';
 
-const Main = ({
-  mobileNavVisibility,
-  hideMobileMenu,
-  history
-}) => {
-  history.listen(() => {
-    if (mobileNavVisibility === true) {
-      hideMobileMenu();
-    }
-  });
+const Main = () => {
   return (
-    <div className={cx({
-      'nav-open': mobileNavVisibility === true
-    })}>
+    
       <div className="wrapper">
         <SideBar />
-
         <div className="main-panel">
           <Header />
           <Route exact path="/" component={Home} />
@@ -38,7 +25,7 @@ const Main = ({
           <Footer />
         </div>
       </div>
-    </div>
+    
   )
 };
 

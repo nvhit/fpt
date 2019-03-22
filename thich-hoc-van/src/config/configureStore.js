@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
-import reducers from '../reducers';
+import reducers from '../reducers/InputTest';
 
 export default function configureStore() {
   return createStore(

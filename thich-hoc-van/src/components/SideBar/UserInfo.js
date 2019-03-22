@@ -14,7 +14,7 @@ class UserInfo extends Component {
     return (
       <div className="user-wrapper">
         <div className="user">
-          <img src=""  className="photo" />
+          <img src="" alt="" className="photo" />
           <div className="userinfo">
             <div className="username">
 
@@ -29,8 +29,8 @@ class UserInfo extends Component {
         </div>
         <Collapse in={isShowingUserMenu}>
           <ul className="nav user-nav">
-            <li><a href="#">Xem thông tin</a></li>
-            <li><a href="#">Sửa thông tin</a></li>
+            <li><a href="http://localhost:3333">Xem thông tin</a></li>
+            <li><a href="http://localhost:3333">Sửa thông tin</a></li>
           </ul>
         </Collapse>
       </div>

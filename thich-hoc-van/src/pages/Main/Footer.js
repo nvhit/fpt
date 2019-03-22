@@ -6,17 +6,17 @@ const Footer = () => (
       <nav className="pull-left">
         <ul>
           <li>
-            <a href="#">
+            <a href="http://localhost:3333">
               Trang chủ
                   </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://localhost:3333">
               Giới thiệu
                   </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://localhost:3333">
               Liên hệ
                   </a>
           </li>

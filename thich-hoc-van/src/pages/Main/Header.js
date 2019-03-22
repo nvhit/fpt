@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 
 import { Navbar, Nav, NavItem, FormGroup, FormControl } from 'react-bootstrap';
 
-const Header = ({
-
-}) => (
+const Header = () => (
     <Navbar fluid={true}>
       <Navbar.Collapse>
         <div className="separator"></div>
